@@ -31,13 +31,13 @@ function showNotes(e) {
     notesObj = JSON.parse(notes);
   }
   let html = "";
-
   notesObj.forEach(function (element, index) {
+
     // this.id gives the id of current ele and id is index here it will gives the index number from notesObj to perform action (in button)
     html += `
         <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Note ${index + 1}</h5>
+                <h5 class="card-title">Note ${index + 1}</h5> 
                 <p class="card-text"> ${element}</p>
                 <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
             </div>
