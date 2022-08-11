@@ -6,16 +6,26 @@ let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function (e) {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
+  let addTitle = document.getElementById('addTitle');
 
   if (notes == null) {
     notesObj = [];
   } else {
     notesObj = JSON.parse(notes);
   }
-  notesObj.push(addTxt.value);
+
+  let myObj = {
+    Text:addTxt.value,
+    Title:addTitle.value,
+  }
+
+
+  // Previously notes is Array of String now it is Array of Object
+  notesObj.push(myObj);
   localStorage.setItem("notes", JSON.stringify(notesObj));
   addTxt.value = "";
-  console.log(notesObj);
+  addTitle.value = "";
+  // console.log(notesObj);
   showNotes();
 });
 
@@ -34,11 +44,12 @@ function showNotes(e) {
   notesObj.forEach(function (element, index) {
 
     // this.id gives the id of current ele and id is index here it will gives the index number from notesObj to perform action (in button)
+    // element.title,element.text gives both field data because notesObj is Array of object
     html += `
         <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Note ${index + 1}</h5> 
-                <p class="card-text"> ${element}</p>
+                <h5 class="card-title">${element.Title}</h5> 
+                <p class="card-text"> ${element.Text}</p>
                 <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
             </div>
         </div>`;
