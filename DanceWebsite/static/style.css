@@ -5,10 +5,47 @@
     box-sizing: border-box;
     padding: 0;
 }
+
+.img1{
+    /* padding: 0px 32px; */
+    margin: 1px -15px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.login{
+    float: right;
+    /* position: relative; */
+    /* height: 5px; */
+    padding: 4px 21px;
+    margin: -27px -44px;
+
+    border: 2px solid #843f84;
+    border-radius: 13px;
+    background: #73367a;
+    height: 30px;
+    font-family: 'Yeon Sung', cursive;
+    color: white;
+    font-size: 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.login:hover{
+    color: #460a46;
+    opacity: 1;
+    right: 0;
+    background-color:#843f84 ;
+}
+
 #navbar{
-    padding: 13px 1px;
+    padding: 14px 82px;
     background-color: #460a46;
     font-family: 'Yeon Sung', cursive;
+    overflow: hidden;
+    /* To make navbar sticky */
+    position: sticky;
+    top: 0;
 }
 #navbar ul{
     /* below there lines are must */
@@ -23,14 +60,12 @@
 
 #navbar li a{
     text-decoration: none;
-    padding: 10px 28px;
+    padding: 10px 37px;
     color: white;
     font-size: 17px;
 }
 
 #navbar li a:hover{
-    text-decoration: none;
-    padding: 10px 28px;
     color: pink;
 }
 
@@ -78,6 +113,34 @@
     right: 0;
 }
 
+#missionSection{
+    height: 300px;
+}
+
+#missionSection h2{
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    color: black;
+}
+
+.card{
+    /* to settle all the cards in one row set display as inline block */
+    display: inline-block; 
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 24%;
+    margin: 17px 58px;
+    height: 222px;
+}
+
+.card h3{
+    /* font-size: 10px; */
+    margin: 10px 10px;
+    text-align: center;
+}
+
 #sponserSection{
     height: 300px;
     background-color: #852b7b;
@@ -92,6 +155,6 @@
 }
 
 #footer{
-    height: 100px;
-    background-color: yellowgreen;
+    height: 20px;
+    background-color: black;
 }

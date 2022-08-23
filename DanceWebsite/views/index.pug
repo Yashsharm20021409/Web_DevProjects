@@ -6,6 +6,8 @@ html
       include ../static/style.css
   body
     nav#navbar 
+       div.img1 
+          img(src="../static/dancing.png", alt="Dance", srcset="")
        ul 
         li #[a(href = "/") Home]
         li #[a(href = "/") About ]
@@ -13,11 +15,23 @@ html
         li #[a(href = "/") Join Us ]
         li #[a(href = "/") Contact]
 
+       div#Login 
+          button.login Signup 
+
     section#introSection 
         div Welcome To India's Best Dance Academy
         div.small Eat Sleep Dance Repeat 
             p ~MS Geeta Shinde
         button.btn Join Now
+
+    section#missionSection
+        h2 Our Mission 
+        div.card 
+            h3 Dance the Way you Like 
+        div.card 
+            h3 Dance Perfection 
+        div.card 
+            h3 Expert Teaching 
     section#sponserSection 
         h3 Our Sponsers 
     footer#footer 
