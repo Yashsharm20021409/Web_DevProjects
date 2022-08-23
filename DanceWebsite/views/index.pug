@@ -1,0 +1,26 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+       ul 
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About ]
+        li #[a(href = "/") Services ]
+        li #[a(href = "/") Join Us ]
+        li #[a(href = "/") Contact]
+
+    section#introSection 
+        div Welcome To India's Best Dance Academy
+        div.small Eat Sleep Dance Repeat 
+            p ~MS Geeta Shinde
+        button.btn Join Now
+    section#sponserSection 
+        h3 Our Sponsers 
+    footer#footer 
+        | Our Footer here
+    script
+      include ../static/index.js

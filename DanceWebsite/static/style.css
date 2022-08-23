@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Moon+Dance&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#navbar{
+    padding: 13px 1px;
+    background-color: #460a46;
+    font-family: 'Yeon Sung', cursive;
+}
+#navbar ul{
+    /* below there lines are must */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    font-size: 17px;
+}
+
+#navbar li a:hover{
+    text-decoration: none;
+    padding: 10px 28px;
+    color: pink;
+}
+
+#introSection{
+
+    background: center/cover no-repeat url('/static/vadim-fomenok-ey00cTlefaE-unsplash.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 520px;
+    background-color: yellow;
+    font-family: 'DynaPuff', cursive;
+    font-size: 35px;
+    padding-bottom: 60px; /*to change dir of div*/
+}
+
+#introSection div.small{
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+#introSection div.small p{
+    font-size: 17px;
+    /* text-align: center;
+    justify-content: center; */
+    font-family: 'Moon Dance', cursive;
+}
+
+#introSection .btn{
+    padding: 6px 25px;
+    color: orchid;
+    background-color: purple;
+    border-radius: 5px;
+    border: 1px solid #c10ea8;
+    cursor: pointer;
+    font-family: 'DynaPuff', cursive;
+    transition: all 0.5s;
+}
+
+#introSection .btn:hover{
+    color: #460a46;
+    opacity: 1;
+    right: 0;
+}
+
+#sponserSection{
+    height: 300px;
+    background-color: #852b7b;
+}
+
+#sponserSection h3{
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    color: white;
+}
+
+#footer{
+    height: 100px;
+    background-color: yellowgreen;
+}
