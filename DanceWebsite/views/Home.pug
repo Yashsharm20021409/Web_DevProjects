@@ -1,0 +1,47 @@
+extends Base.pug 
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    section#introSection 
+        div Welcome To India's Best Dance Academy
+        div.small Eat Sleep Dance Repeat 
+            p ~MS Geeta Shinde
+        button.btn Join Now
+
+    section#missionSection
+        h2 Our Mission 
+        div.card 
+            h3 Dance the Way you Like 
+            div.card-box 
+                    div.card-img 
+                       img(src="../static/dance (1).png", alt="Png", srcset="") 
+                    div.card-content
+                       p “Hand in hand, on the edge of the sand, they danced by the light of the moon.” - Edward Lear
+        div.card 
+            h3 Dance Perfection 
+            div.card-box 
+                    div.card-img 
+                       img(src="../static/female-flamenco-dancer.png", alt="Png", srcset="") 
+                    div.card-content
+                       p “ This world we live in is the dance of the  creator.  Dancers come and go in the twinkling of an eye but the dance lives on..." - Michael Jackson
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                    div.card-img 
+                       img(src="../static/dance.png", alt="Png", srcset="") 
+                    div.card-content
+                       p Don't let people discourage you. Just fluff out your tutu and dance away. Dance is the hidden language of the soul. – Martha Graham. 
+    section#sponserSection 
+        h3 Our Sponsers 
+        div#sponsers 
+           img(src="../static/download.jpg", alt="Sponsers", class = "spImage")
+           img(src="../static/download (1).jpg", alt="Sponsers", class = "spImage")
+           img(src="../static/dance-india-dance-li-l-masters-751000.jpg", alt="Sponsers", class = "spImage")
+           img(src="../static/download (2).jpg", alt="Sponsers", class = "spImage")
+    hr 

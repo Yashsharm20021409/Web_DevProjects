@@ -16,7 +16,12 @@ app.set('views',path.join(__dirname,'views'))
 //- ENDPOINTS
 app.get('/',(req,res)=>{
     const var1 = {}
-    res.status(200).render('index.pug',var1);
+    res.status(200).render('Home.pug',var1);
+})
+
+app.get('/contact',(req,res)=>{
+    const var1 = {}
+    res.status(200).render('contact.pug',var1);
 })
 
 //- Start the server

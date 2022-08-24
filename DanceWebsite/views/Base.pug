@@ -1,0 +1,39 @@
+//- layout.pug it is bacically a template according to this we have to fill all file
+doctype html
+html
+  head
+    title Dance Academy
+    block style 
+    block scripts
+  body
+    nav#navbar 
+       div.img1 
+          img(src="../static/dancing.png", alt="Dance", srcset="")
+       ul 
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About ]
+        li #[a(href = "/") Services ]
+        li #[a(href = "/contact") Join Us ]
+        li #[a(href = "#footer") Contact]
+
+       div#Login 
+          button.login Signup 
+    block content
+    footer#footer 
+        div#social
+           a(href='https://www.facebook.com')
+            img(src="../static/facebook.png", alt="facebook", srcset=""  class = "soImage")
+           a(href='https://www.gmail.com')
+            img(src="../static/gmail.png", alt="gmail", srcset="" class = "soImage")
+           a(href='https://www.twitter.com')
+            img(src="../static/twitter.png", alt="twitter", srcset="" class = "soImage")
+        div#foot 
+            ul.ft1 
+              li #[a(href = "/") Support]
+              li #[a(href = "/") Info]
+              li #[a(href = "/") Classes]
+            ul 
+              li #[a(href = "/") Terms of Use]
+              li #[a(href = "/") Privacy Policy]
+
+            p  © 2022  www.ChakDe.com 
