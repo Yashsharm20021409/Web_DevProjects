@@ -114,7 +114,7 @@
 }
 
 #missionSection{
-    height: 300px;
+    height: 350px;
 }
 
 #missionSection h2{
@@ -137,13 +137,41 @@
 
 .card h3{
     /* font-size: 10px; */
-    margin: 10px 10px;
+    margin: 11px 0px;
     text-align: center;
+    font-family: 'DynaPuff', cursive;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;  /*to make vertically center*/
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 115px;
+    padding: 0px 7px;
+    margin: 26px 0px;
+}
+
+.card-img img{
+     /*images became small and maintain them self inside the div container*/
+    height: inherit; 
+}
+
+.card-content{
+    padding: 0px 17px;
+}
+
+.card-content p{
+    font-size: 12px;
+    font-family: 'DynaPuff', cursive;
+    font-weight: lighter;
 }
 
 #sponserSection{
     height: 300px;
-    background-color: #852b7b;
+    background-color: #3c053c;
 }
 
 #sponserSection h3{
@@ -154,7 +182,69 @@
     color: white;
 }
 
+#sponsers{
+    height: 120px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#sponsers .spImage{
+    height: 111%;
+    margin: 31px 31px;
+    border-radius: 4px;
+}
+
 #footer{
-    height: 20px;
-    background-color: black;
+    height: 245px;
+    /* background-color: #450d39; */
+    background-color: #3c053c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.soImage{
+    padding: 7px 30px;
+    /* height: 2%; */
+    max-width: 95px;
+    margin: 8px -7px;
+    /* to invert color of the image */
+    filter: invert(1);
+}
+
+hr{
+    padding: 0px 0px;
+    background-color: #fc15e1;
+    margin: -1px 35px;
+}
+
+#foot{
+    margin-top: 10px;
+}
+
+#foot ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+#foot ul li{
+    list-style: none;
+}
+
+#foot ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.ft1{
+    padding: 4px 18px;
+}
+
+#foot p{
+    padding: 9px 10px;
+    font-family: 'Yeon Sung', cursive;
 }

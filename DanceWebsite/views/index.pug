@@ -28,13 +28,48 @@ html
         h2 Our Mission 
         div.card 
             h3 Dance the Way you Like 
+            div.card-box 
+                    div.card-img 
+                       img(src="../static/dance (1).png", alt="Png", srcset="") 
+                    div.card-content
+                       p “Hand in hand, on the edge of the sand, they danced by the light of the moon.” - Edward Lear
         div.card 
             h3 Dance Perfection 
+            div.card-box 
+                    div.card-img 
+                       img(src="../static/female-flamenco-dancer.png", alt="Png", srcset="") 
+                    div.card-content
+                       p “ This world we live in is the dance of the  creator.  Dancers come and go in the twinkling of an eye but the dance lives on..." - Michael Jackson
         div.card 
-            h3 Expert Teaching 
+            h3 Expert Teaching
+            div.card-box 
+                    div.card-img 
+                       img(src="../static/dance.png", alt="Png", srcset="") 
+                    div.card-content
+                       p Don't let people discourage you. Just fluff out your tutu and dance away. Dance is the hidden language of the soul. – Martha Graham. 
     section#sponserSection 
         h3 Our Sponsers 
+        div#sponsers 
+           img(src="../static/download.jpg", alt="Sponsers", class = "spImage")
+           img(src="../static/download (1).jpg", alt="Sponsers", class = "spImage")
+           img(src="../static/dance-india-dance-li-l-masters-751000.jpg", alt="Sponsers", class = "spImage")
+           img(src="../static/download (2).jpg", alt="Sponsers", class = "spImage")
+
+    hr 
     footer#footer 
-        | Our Footer here
+        div#social
+           img(src="../static/facebook.png", alt="facebook", srcset=""  class = "soImage")
+           img(src="../static/gmail.png", alt="gmail", srcset="" class = "soImage")
+           img(src="../static/twitter.png", alt="twitter", srcset="" class = "soImage")
+        div#foot 
+            ul.ft1 
+              li #[a(href = "/") Support]
+              li #[a(href = "/") Info]
+              li #[a(href = "/") Classes]
+            ul 
+              li #[a(href = "/") Terms of Use]
+              li #[a(href = "/") Privacy Policy]
+
+            p  © 2022  www.ChakDe.com 
     script
       include ../static/index.js
