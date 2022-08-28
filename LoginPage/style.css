@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../LoginPage/bg3.jpg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    /* border: 12px solid black; */
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.container h1 {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Aboreto', cursive;
+    width: 45%;
+    display: inline-block;
+    font-size: 32px;
+    border-bottom: 2px solid violet;
+    margin-bottom: 27px;
+    padding: 10px 2px;
+}
+
+.container h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.box {
+    width: 123%;
+    /* border: 2px solid purple; */
+    margin: 22px 6px;
+    border-bottom: 2px solid violet;
+}
+
+.box input {
+    /* to make transparent */
+    background: none;
+    width: 87%;
+    /* border: 2px solid purple; */
+    border: none;
+    outline: none;
+    padding: 5px 13px;
+    font-size: 18px;
+    border-radius: 7px;
+    font-family: 'Aboreto', cursive;
+    color: #e0d2e0;
+}
+
+.box input::placeholder{
+    color: lightgray;
+    opacity: 0.9;
+}
+
+.box:hover{
+    width: 140%;
+}
+
+.box i {
+    width: 14px;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    padding: 6px 14px;
+    margin: 3px 7px;
+    border-radius: 7px;
+    border: 2px solid purple;
+    font-size: 16px;
+    background-color: purple;
+    color: plum;
+    /* background: none; */
+    opacity: 0.8;
+    font-weight: bolder;
+    font-family: 'Aboreto', cursive;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    color: purple;
+    background-color: violet;
+}
+
+/* media queries */
+@media only screen and (min-width: 300px) and (max-width: 680px) {
+    .container {
+        margin: 40px 15px;
+        position: unset;
+    }
+    .container h1 {
+        font-size: 30px;
+        text-align: center;
+        width: unset;
+    }
+    .box input {
+        margin: 10px auto;
+    }
+}
