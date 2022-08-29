@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation bar */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /* background-color: black; */
+    /* sticky navbar */
+    top: 0;
+    position: sticky;
+}
+
+.logo{
+    width: 15%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img{
+    background: rgba(0, 0, 0, 0.5);
+    height: 38px;
+    width: 27%;
+    border: 2px solid white;
+    border-radius: 27px;
+}
+
+.nav-list{
+    padding: 4px 0px;
+    display: flex;
+    width: 150%;
+    /* background-color: black; */
+    /* justify-content: center;
+    text-align: center; */
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 14px 34px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    /* padding: 11px 34px; */
+    font-size: 18px;
+}
+
+.nav-list li a:hover{
+    color: grey;
+    /* text-decoration:underline; */
+}
+
+.right-nav{
+    /* background-color: violet; */
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+#search{
+    display: flex;
+    outline: none;
+    margin: 1px 8px;
+    /* background-color: green; */
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 4px 11px;
+}
+
+.btn-sm{
+    /* padding: 8px 6px; */
+    margin: 2px 0px;
+    width: 76px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    outline: none;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.5) url('../bg/bg1.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    /* to align component of box-main center */
+    max-width: 50%;
+    margin: auto;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondHalf{
+    width: 25%;
+}
+
+.secondHalf img{
+    width: 91%;
+    height: 136px;
+    border-radius: 81px;
+}
+
+
