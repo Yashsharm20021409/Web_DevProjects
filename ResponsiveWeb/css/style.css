@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+.background1{
+    background: rgba(0, 0, 0, 0.5) url('../bg/bg1.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    top: 0;
+}
+
 /* Navigation bar */
 
 .navbar{
@@ -92,20 +99,16 @@
     background-color: green;
     color: white;
     outline: none;
+    margin-top: 4px;
 }
 
-.background{
-    background: rgba(0, 0, 0, 0.5) url('../bg/bg1.jpg') no-repeat center center;
-    background-size: cover;
-    background-blend-mode: darken;
-}
 
 .firstSection{
-    justify-content: center;
-    height: 100vh;
-    display: flex;
-    text-align: center;
-    align-items: center;
+        /* justify-content: center; */
+        height: 90vh;
+        /* display: flex; */
+        text-align: center;
+        /* align-items: center; */
 }
 
 .box-main{
@@ -114,27 +117,71 @@
     align-items: center;
     color: white;
     font-family: cursive;
+    padding: 130px 20px;
     /* to align component of box-main center */
     max-width: 50%;
     margin: auto;
 }
 
 .firstHalf{
-    width: 80%;
+    /* width: 80%; */
+    min-width: 116%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.secondHalf{
-    width: 25%;
-}
+/* .secondHalf{
+    
+} */
 
 .secondHalf img{
-    width: 91%;
-    height: 136px;
-    border-radius: 81px;
+    width: 80%;
+    height: 110px;
+    border-radius: 110px;
+    border: 2px solid white;
+    display: block;
+    margin: auto;
 }
 
 
+.big-text {
+    /* margin: 10px 10px; */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.small-text{
+    margin: 17px 0px;
+    text-align: center;
+
+}
+
+
+.buttons button{
+    padding: 7px 28px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    /* background-color: #bb9b9b; */
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons button:hover{
+   background-color: azure;
+   color: black;
+}
+
+
+
+
+
+.container{
+    background-color: red;
+    height: 100px;
+}
