@@ -186,6 +186,7 @@ html{
     /* background-color: #bb9b9b; */
     color: white;
     font-family: 'Caveat', cursive;
+    transition: all 0.5s;
 }
 
 .buttons button:hover {
@@ -224,13 +225,17 @@ html{
 }
 
 .contact{
-    height: 60vh;
-    background-color:  #dedad6;
-    padding: 40px 0px;
+    height: 110vh;
+    background-color:  #cdcdcd;
+    /* background-color:  #dedad6; */
+    padding: 27px 0px;
+}
+
+.contact p{
+    margin-top: 30px;
 }
 
 .form{
- 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,18 +244,98 @@ html{
     margin: auto;
 }
 
-.form input{
+.input_form{
     padding: 11px 22px;
     margin: 8px 67px;
     border: 2px solid black;
     border-radius: 7px;
     outline: none;
+    /* font-family: 'Caveat', cursive; */
+     font-family: 'Libre Baskerville', serif;
 }
 
-#form-submit{
+.btnForm{
     cursor: pointer;
     width: 80px;
     height: 36px;
     margin: auto;
-    padding: 10px;
+    padding: 8px;
+    border-radius: 7px;
+    border: 0px;
+    font-family: 'Caveat', cursive;
+}
+
+.btn-dark{
+    margin-top: 10px;
+    transition: all 0.5s;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn-dark:hover{
+    color: #dedad6;
+    background-color: black;
+   
+}
+
+
+.footer{
+    height: 245px;
+    /* background-color: #450d39; */
+    background-color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.soImg{
+    padding: 7px 22px;
+    /* height: 2%; */
+    max-width: 95px;
+    margin: 8px -7px;
+    /* to invert color of the image */
+    /* filter: invert(1); */
+}
+
+.soImg img{
+    border: 2px solid white;
+}
+
+hr{
+    padding: 0px 0px;
+    background-color: #bdbdbd;
+    margin: -1px 35px;
+}
+
+.foot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.foot ul li{
+    list-style: none;
+}
+
+.foot ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Baloo 2', cursive;
+}
+
+.foot ul li a:hover{
+    color: grey;
+}
+
+.ft1{
+    padding: 6px 18px;
+}
+
+.foot p{
+    font-size: 20px;
+    padding: 9px 10px;
+    font-family: 'Baloo 2', cursive;
 }
