@@ -1,57 +1,203 @@
 /* 1021 349 */
 
-@media only screen and (max-width:1021px) {
-    .background1 {
-        /* height: 101vh; */
-    }
+
+
+@media only screen and (max-width:460px){
 
     .nav-list {
         flex-direction: column;
-
+        width: auto;
     }
 
     .nav-list li a {
-        font-size: 1.3rem;
+        font-size: 1.3rem;   
     }
 
     .navbar {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* float: left; */
-        /* padding: 0px 27px; */
-        /* width: 9px; */
-        /* max-height: 93vh; */
-
+        height: 420px;
+        transition: all 0.7s ease-out;
     }
 
     .logo {
-        /* margin: 9px 564px; */
         width: 112px;
         height: 41px;
     }
 
     .right-nav {
-        /* flex-direction: column; */
         display: block;
         width: 178px;
     }
 
     #search {
-        /* max-width: 154px; */
-        /* margin: 1px 175px; */
         height: 21px;
     }
 
     .btn-sm {
-        /* margin: 13px 120px; */
-        /* width: auto; */
         margin-top: 12px;
+    }
+
+    .firstSection{
+        height: 61vh;
+    }
+
+    .box-main{
+        padding: 70px 10px;
+    }
+
+    .box-main-para{
+        text-align: center;
     }
 
     .section{
         flex-direction: column;
+        margin-top: 111px;
+        text-align: center;
+        align-items: center;
     }
 
-    
+    .sec-left{
+        margin-top: 209px;
+    }
+
+    .sec-right{
+        margin-top: 243px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        /* a class to hide navigation when media query comes */
+        height: 70px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .naviline{
+        display: block;
+    }
+
+    .contact{
+        margin-top: 108px;
+    }
+
+    .form{
+        max-width: none;
+    }
+
+    /* .small-text{
+        /* text-align: left; 
+    } */
+
+    .big-text{
+        font-size: 1.2rem;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+}
+
+
+/* @media only screen  and  (max-width:1025px)  */
+@media only screen and (min-width: 454px) and (max-width:1025px)
+{
+
+    .nav-list {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .nav-list li a {
+        font-size: 1.3rem;
+       
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 420px;
+        transition: all 0.7s ease-out;
+    }
+
+    .logo {
+        width: 112px;
+        height: 41px;
+    }
+
+    .right-nav {
+        display: block;
+        width: 178px;
+    }
+
+    #search {
+        height: 21px;
+    }
+
+    .btn-sm {
+        margin-top: 12px;
+    }
+
+    .firstSection{
+        height: 71vh;
+    }
+
+    .box-main{
+        padding: 110px 10px;
+    }
+
+    .section{
+        flex-direction: column;
+        margin-top: 111px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec-left{
+        margin-top: 120px;
+    }
+
+    .sec-right{
+        margin-top: 140px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        /* a class to hide navigation when media query comes */
+        height: 70px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .naviline{
+        display: block;
+    }
+
+    .contact{
+        margin-top: 40px;
+    }
+
+    .form{
+        max-width: none;
+    }
+
+    .small-text{
+        text-align: left;
+    }
+
+    .text-center{
+        text-align: center;
+    }
 }

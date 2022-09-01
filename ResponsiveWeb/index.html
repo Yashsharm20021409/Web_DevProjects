@@ -12,28 +12,33 @@
 
 <body>
     <div class="background1" id="Home">
-        <nav class="navbar background">
+        <nav class="navbar background h-nav-resp ">
             <div class="logo"><img src="../ResponsiveWeb/logo/logo.png" alt="logo" srcset=""></div>
-            <ul class="nav-list">
+            <ul class="nav-list v-class-resp">
                
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#service">Services</a></li>
             </ul>
-            <div class="right-nav">
+            <div class="right-nav v-class-resp">
                 <input type="text" id="search" class="search" name="search" placeholder="Search">
                 <button class="btn btn-sm">Search</button>
             </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
-
+        <hr class="naviline">
         <section class="background firstSection">
             <div class="box-main">
 
                 <div class="firstHalf cont">
                     <p class="big-text"> The Computer Center
                     </p>
-                    <p class="small-text">In this World of 8 billon people we need to educate all of them. This is the
+                    <p class="small-text box-main-para">In this World of 8 billon people we need to educate all of them. This is the
                         future
                         of the educated world and we are proud to say that the future of the Education is here
                     </p>
@@ -81,7 +86,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section sec-right">
         <div class="paras">
             <p class="sectionTag big-text">Lets Grow Together</p>
             <p class="sectionSubTag small-text">A year ago, we set out to try something new—an earnest campaign to ask
@@ -95,7 +100,7 @@
         </div>
     </section>
 
-    <hr>
+    <!-- <hr> -->
 
 
 
@@ -113,9 +118,9 @@
         </div>
     </section>
 
-    <hr>
+    <hr class="footline">
 
-    <footer class="footer">
+    <footer class="footer" id="service">
         <div class="social">
             <a href=""><img class="soImg" src="../ResponsiveWeb/SocialImages/facebook.png" alt="" srcset=""></a>
             <a href=""><img class="soImg" src="../ResponsiveWeb/SocialImages/gmail.png" alt="" srcset=""></a>
@@ -133,11 +138,11 @@
                 <li><a href="">Privacy Policy</a></li>
             </ul>
 
-            <p> Copyright © 2022 www.ComputerHub.co.in </p>
+            <p class="box-main-para"> Copyright © 2022 www.ComputerHub.co.in </p>
         </div>
 
     </footer>
 </body>
-<script src="../ResponsiveWeb/js/app.js"></script>
-
+<!-- <script src="../ResponsiveWeb/js/app.js"></script> -->
+<script src="../ResponsiveWeb/js/resp.js"></script>
 </html>

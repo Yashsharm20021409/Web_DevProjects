@@ -21,11 +21,13 @@ html{
     /* sticky navbar */
     top: 0;
     position: sticky;
+    padding: 2px 0px;
+    
 }
 
 .logo {
     width: 15%;
-    padding: 7px;
+    padding: 9px 7px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -313,10 +315,14 @@ html{
     border: 2px solid white;
 }
 
-hr{
+.footline{
     padding: 0px 0px;
     background-color: #bdbdbd;
     margin: -1px 35px;
+}
+
+.naviline{
+    display: none;
 }
 
 .foot ul{
@@ -348,4 +354,20 @@ hr{
     font-size: 20px;
     padding: 9px 10px;
     font-family: 'Baloo 2', cursive;
+}
+
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    top: 27px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
 }
