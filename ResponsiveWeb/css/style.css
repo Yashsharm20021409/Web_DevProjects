@@ -34,7 +34,7 @@ html{
 .logo img {
     background: rgba(0, 0, 0, 0.5);
     height: 38px;
-    width: 27%;
+    width: 36%;
     border: 2px solid white;
     border-radius: 27px;
 }
@@ -42,7 +42,7 @@ html{
 .nav-list {
     padding: 4px 0px;
     display: flex;
-    width: 150%;
+    width: 125%;
     /* background-color: black; */
     /* justify-content: center;
     text-align: center; */
@@ -51,7 +51,7 @@ html{
 
 .nav-list li {
     list-style: none;
-    padding: 14px 34px;
+    padding: 14px 41px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -74,7 +74,7 @@ html{
 
 .right-nav {
     /* background-color: violet; */
-    width: 50%;
+    width: 30%;
     text-align: right;
     display: flex;
     justify-content: center;
@@ -86,7 +86,7 @@ html{
     border: 0px;
     display: flex;
     outline: none;
-    margin: 1px 8px;
+    margin: 1px 0px;
     /* background-color: green; */
     color: white;
     border-radius: 10px;
@@ -97,15 +97,24 @@ html{
 
 .btn-sm {
     /* padding: 8px 6px; */
-    margin: 2px 0px;
+    margin: 2px 16px;
     width: 76px;
     height: 34px;
     border-radius: 10px;
-    background-color: green;
+    /* background-color: green; */
+    background: none;
+    border: 2px solid white;
     color: white;
     outline: none;
     margin-top: 4px;
     font-family: 'Caveat', cursive;
+    transition: all 0.5s;
+}
+
+.btn-sm:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 .background1 {
@@ -201,6 +210,7 @@ html{
     align-items: center;
     max-width: 1055px;
     margin: auto;
+
 }
 
 .sec-left {
@@ -225,7 +235,7 @@ html{
 }
 
 .contact{
-    height: 110vh;
+    max-height: 152vh;
     background-color:  #cdcdcd;
     /* background-color:  #dedad6; */
     padding: 27px 0px;
@@ -240,7 +250,7 @@ html{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
 }
 
