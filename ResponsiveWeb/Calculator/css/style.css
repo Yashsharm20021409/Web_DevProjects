@@ -48,7 +48,7 @@ body {
 #display-area .answers {
     text-align: right;
     color: rgba(150, 150, 150, 0.87);
-    height: 7px;
+    height: 33px;
     line-height: 3;
     font-size: larger;
 }

@@ -1,24 +1,24 @@
 let currentInput = document.querySelector('.current-input');
 let answerScreen = document.querySelector('.answers');
-let button = document.querySelector('button');
-let clear = document.querySelector('.clear');
-let erase = document.querySelector('.erase');
-let evaluate = document.querySelector('.evaluate');
+let buttons = document.querySelectorAll('button');
+let clear = document.querySelector('#clear');
+let erase = document.querySelector('#erase');
+let evaluate = document.querySelector('#evaluate');
 
 let realTimeScreenValue = [];
 
-// clear.addEventListener('click', () => {
-//     realTimeScreenValue = [''];
-//     answerScreen.innerHTML = 0;
-//     answerScreen.className = 'answers';
-//     currentInput.className = 'current-input';
-//     answerScreen.style.color = "rgba(150,150,150,0.87)";
-// });
+clear.addEventListener('click', () => {
+    realTimeScreenValue = [''];
+    answerScreen.innerHTML = 0;
+    answerScreen.className = 'answers';
+    currentInput.className = 'current-input';
+    answerScreen.style.color = "rgba(150,150,150,0.87)";
+});
 
 
-button.forEach((btn) => {
+buttons.forEach((btn) => {
 
-    btn.addEventListener("click", () => {
+    btn.addEventListener('click', () => {
         //I when clicked button is not erased button
         if (!btn.id.match('erase')) {
             //1l To display value on btn press
