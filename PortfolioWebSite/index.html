@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/7e97c533d3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             </div>
         </div>
     </div>
-    <!-- about -->
+    <!---------------------------about section--------------------------->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -43,35 +44,111 @@
                         soluta ea.</p>
 
                     <div class="tab-title">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="Skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing web/app interfaces</li>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>App Development</span><br>Building Android/ios app</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="Experience">
                         <ul>
                             <li><span>2020-current</span><br>UX/UI design at Geu Collge</li>
                             <li><span>2019-2020</span><br>At fontEnd Design Dept. in MNC</li>
                             <li><span>2018-2019</span><br>Intern at Flipkart</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/ios app</li>
+                            <li><span>2022</span><br>UI/UX Design from Src</li>
+                            <li><span>2020-2024</span><br>B.tech from GEU</li>
+                            <li><span>2020</span><br>Schooling from St. Anthony School</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+    
+    <!-----------------------Service section----------------------->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="service-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ad eveniet voluptatum aliquam architecto dolorum tempora inventore minus eius excepturi!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ad eveniet voluptatum aliquam architecto dolorum tempora inventore minus eius excepturi!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ad eveniet voluptatum aliquam architecto dolorum tempora inventore minus eius excepturi!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ---------------Portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! Lorem ipsum dolor sit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! Lorem ipsum dolor sit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! Lorem ipsum dolor sit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+</body>
+<script>
+    var tabLinks= document.getElementsByClassName('tab-links');
+    var tabContents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            // remove underline
+            tabLink.classList.remove('active-link');
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
 </html>
