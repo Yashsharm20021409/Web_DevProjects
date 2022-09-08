@@ -1,16 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #080808;
     color: #fff;
+    
 }
 
-#header{
+html{
+    scroll-behavior: smooth;
+}
+
+#header {
     width: 100%;
     height: 100vh;
     /* background-image: url(../images/background.png) ; */
@@ -19,15 +24,15 @@ body{
     background-size: cover;
 }
 
-.logo{
+.logo {
     width: 66px;
 }
 
-.container{
+.container {
     padding: 10px 10%;
 }
 
-#navbar{
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,13 +42,13 @@ body{
     flex-wrap: wrap;
 }
 
-#navbar ul li{
+#navbar ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 21px;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -51,7 +56,7 @@ body{
     position: relative;
 }
 
-#navbar ul li a::after{
+#navbar ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -64,37 +69,37 @@ body{
     transition: 0.5s;
 }
 
-#navbar ul li a:hover::after{
+#navbar ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     margin-top: 20%;
     font-size: 30px;
 }
 
-.header-text h1{
+.header-text h1 {
     margin-top: 20px;
     font-size: 60px;
 }
 
-.header-text h1 span{
+.header-text h1 span {
     color: #ff004f;
 }
 
 /* about */
-#about{
+#about {
     padding: 80px 0px;
     color: #ababab;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     /* The flex-basis property is a sub-property of the Flexible Box Layout module. 
     It specifies the initial size of the flex item, before any available space is distributed 
     according to the flex factors. When omitted from the flex shorthand, its specified value is
@@ -102,28 +107,28 @@ body{
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
 }
 
-.sub-title{
+.sub-title {
     color: #fff;
     font-size: 60px;
     font-weight: 600;
     /* padding-bottom: 20px; */
 }
 
-.tab-title{
+.tab-title {
     margin: 20px 0px 40px;
     display: flex;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -131,7 +136,7 @@ body{
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -141,62 +146,63 @@ body{
     bottom: -8px;
     background: #ff004f;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #ff004f;
     font-size: 14px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
 /* ----------------------Services------------------------- */
 
-#service{
+#service {
     padding: 28px 0px;
 }
 
-.service-list{
+.service-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.service-list div{
+.service-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s,transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
 }
 
-.service-list div i{
+.service-list div i {
     font-size: 50px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
 }
 
-.service-list div h2{
+.service-list div h2 {
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
 }
 
-.service-list div a{
+.service-list div a {
     color: #fff;
     margin-top: 20px;
     font-size: 13px;
@@ -204,38 +210,38 @@ body{
     display: inline-block;
 }
 
-.service-list div:hover{
+.service-list div:hover {
     background: #ff004f;
     /* on hover div move in y-direction */
     transform: translateY(-10px);
 }
 
 /* -----------------portfolio------------- */
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     height: 0;
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -250,12 +256,12 @@ body{
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -268,15 +274,15 @@ body{
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -288,7 +294,174 @@ body{
     transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff004f;
     /* color: #ff004f; */
+}
+
+/* --------------------Contact Section-------------------- */
+.contact-left {
+    /* The flex-basis property defines the size of the flex-item along the main axis of the flex container. 
+    The main axis is horizontal if flex-direction is set to row and it'll be vertical if the flex-direction 
+    property is set to column  */
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icon{
+    margin-top: 30px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 30px;
+    color: #ababab;
+    transition: transform 0.5s;
+}
+
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input,form textarea{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 15px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+/* ------Css for Small Screens -------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+     #header{
+        /* background-image: url('../images/phone-background.png'); */
+     }
+     .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+     }
+     .header-text h1{
+        font-size: 30px;
+     }
+     nav .fa-solid{
+        display: block;
+        font-size: 25px;
+     }
+     nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+
+     }
+
+     nav ul li a{
+        display: block;
+        margin: 25px;
+     }
+
+     nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+     }
+
+     .sub-title{
+        font-size: 40px;
+        margin-bottom: 10px;
+     }
+
+     .about-col-1, .about-col-2{
+        flex-basis: 100%;
+     }
+
+     .about-col-1{
+        margin-bottom: 30px;
+     }
+
+     .about-col-2{
+        font-size: 14px;
+     }
+
+     .tab-links{
+        margin-right: 20px;
+        font-size: 16px;
+     }
+
+     #service{
+        margin-top: -53px;
+     }
+
+     .contact-left,.contact-right{
+        flex-basis: 100%;
+     }
+
+     .copyright{
+        font-size: 14px;
+     }
 }
