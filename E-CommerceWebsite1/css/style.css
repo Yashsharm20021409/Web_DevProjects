@@ -904,6 +904,10 @@ footer .copyright {
 
 
 /**************Cart Page*************/
+#cart{
+    overflow-x: auto;
+}
+
 #cart table{
     width: 100%;
     border-collapse: collapse;
@@ -971,11 +975,11 @@ footer .copyright {
     margin-bottom: 30px;
 }
 
-#Coupon h3{
+#Coupon h3,#subtotal h3{
     padding-bottom: 15px;
 }
 
-#Coupon div input{
+#Coupon input{
     padding: 10px 20px;
     outline: none;
     width: 60%;
@@ -983,9 +987,11 @@ footer .copyright {
     border: 1px solid #e2e9e1;
 }
 
-#Coupon button{
+#Coupon button,
+#subtotal button{
     background-color: #088178;
     color: #fff;
+    padding: 12px 20px;
 }
 
 #subtotal{
@@ -995,7 +1001,18 @@ footer .copyright {
     padding: 30px;
 }
 
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
 
 
 /* **********************-Media Queries-****************** */
@@ -1376,6 +1393,18 @@ footer .copyright {
     #form-details form{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /* Cart page */
+    #cart-add {
+        flex-direction: column;
+    }
+    #Coupon{
+        width: 100%;
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }
 
