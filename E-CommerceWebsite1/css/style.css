@@ -89,9 +89,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 9px 65px;
-    background-color: #E3E6F3;
+    background-color: #e2e9e1;
     /* box-shadow: x,y,radius,color */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     top: 0;
     position: sticky;
 }
