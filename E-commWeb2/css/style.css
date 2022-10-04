@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'League Spartan', sans-serif; */
+    font-family: 'Abyssinica SIL', serif;
 }
 
 /* Common css */
@@ -12,29 +15,40 @@ h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
+    font-family: 'Alkalami', serif;
 }
 
 h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
-    font-family: 'Tiro Bangla', serif;
+    font-family: 'Alkalami', serif;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 30px;
+    color: #222;
+    font-family: 'Alkalami', serif;
 }
 
 h4 {
     font-size: 20px;
     color: #222;
+    font-family: 'Alkalami', serif;
 }
 
 h6 {
     font-weight: 700;
     font-size: 12px;
+    font-family: 'Alkalami', serif;
 }
 
 p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
+    font-family: 'Abyssinica SIL', serif;
 }
 
 .section-p1 {
@@ -209,4 +223,106 @@ body{
     font-size: 15px;
     color: white;
     font-weight: 400;
+}
+
+
+/* New product section */
+
+#newProduct .text
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#newProduct .text ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#newProduct .text ul li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#newProduct .text ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#newProduct .pro{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+    overflow-x: auto;
+}
+
+#newProduct .pro .proImg{
+    width: 25%;
+    padding: 10px 20px;
+    /* position: relative; */
+}
+
+#newProduct .proImg{
+    min-width: 244px;
+    border: 1px solid #cce7d0;
+    border-radius: 27px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px 10px;
+}
+
+#newProduct .proImg img{
+    border-radius: 27px;
+}
+
+#newProduct .set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#newProduct .pro .proImg img{
+   width: 100%;
+   padding-bottom: 15px;
+}
+
+#newProduct .pro .cart{
+    padding-right: 10px;
+    color: black;
+}
+
+
+#newProduct .proImgIn .star{
+    padding-top: 7px;
+    color: goldenrod;
+    font-size: 13px;
+}
+
+#newProduct .proImgIn h4{
+    padding-top: 5px;
+    font-size: 15px;
+    color: lightgray;
+}
+
+
+#newProduct .loaddiv{
+    padding-top: 20px;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.load{
+    color: black;
+    background-color: lightgray;
+    font-family: 'Abyssinica SIL', serif;
+    border-radius: 10px;
+}
+
+.load:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
 }
